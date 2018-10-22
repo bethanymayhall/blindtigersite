@@ -81,64 +81,64 @@ button {
     margin: 0;
     background-size: 20px 20px;
     background-image: linear-gradient(to right, #191919 1px, transparent 1px), linear-gradient(to bottom, #191919 1px, transparent 1px);
-}
+    }
 
-h1 {
-    color: red;
-}
+    h1 {
+        color: red;
+    }
 
-.half-one {
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    float: left;
+    .half-one {
+        position: absolute;
+        width: 50vw;
+        height: 50vh;
+        float: left;
 
-}
+    }
 
-.half-two {
-    background: linear-gradient(to left, #ff9b9b, #ff966c);
-    position: absolute;
-    width: 100vw;
-    height: 50vh;
-    right: 0;
-    margin-top: 50vh;
-}
+    .half-two {
+        background: linear-gradient(to left, #ff9b9b, #ff966c);
+        position: absolute;
+        width: 100vw;
+        height: 50vh;
+        right: 0;
+        margin-top: 50vh;
+    }
 
-#left {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 50vh;
-    top: 50%;
-    transform: translateY(-100px);
-    color: white;
-    width: 100vw;
-}
+    #left {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 50vh;
+        top: 50%;
+        transform: translateY(-100px);
+        color: white;
+        width: 100vw;
+    }
 
-p {
-    margin-top: 100px;
-    text-align: center;
-    padding: 0 5%;
-    line-height: 30px;
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
-}
+    p {
+        margin-top: 100px;
+        text-align: center;
+        padding: 0 5%;
+        line-height: 30px;
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+    }
 
-#logo {
-    width: 180px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-}
+    #logo {
+        width: 180px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
 
-#phone {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-    height: 53vh;
-    bottom: 0;
-}
+    #phone {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: 53vh;
+        bottom: 0;
+    }
 }
