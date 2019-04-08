@@ -10,6 +10,60 @@ p, h2, h3, {
 	font-family: "work sans", sans-serif;
 }
 
+a {
+	color: black;
+}
+a:hover
+{
+     color:#fff;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+#right {
+	right: 0;
+	width: 850px;
+	bottom: 0;
+	position: absolute;
+  z-index: 1;
+}
+
+#leaves {
+	top: -6px;
+    width: 450px;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+		animation: sway1 10s infinite;
+    transform-origin: 50% 100% 0;
+}
+
+@keyframes sway1 {
+    0%, 100%{ transform: rotate(0deg);}
+    50%{ transform: rotate(3deg); }
+}
+
+#blob {
+	left: -8px;
+	width: 350px;
+	bottom: 0;
+	position: absolute;
+	opacity: 0.5;
+}
+
+.main-container {
+	z-index: 2;
+	position: relative;
+}
+
+#back {
+	left: 0;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 #subtitle {
 	font-family: "work sans", sans-serif;
 	color: white;
@@ -37,7 +91,7 @@ p, h2, h3, {
 }
 
 .footer {
-	position: fixed;
+	position: absolute;
     bottom: 0;
     background: #FF9A82;
     width: 100%;
@@ -45,17 +99,17 @@ p, h2, h3, {
 		left: 0;
 		font-family: "work sans", sans-serif;
 		font-size: 12px;
+		z-index: 5;
 }
 
-#left {
-	position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 200px;
-    top: 50%;
-    transform: translateY(-100px);
-    color: white;
+.background {
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	position: ABSOLUTE;
+	display: block;
+	top: 0;
+	left: 0;
 }
 
 p {
@@ -68,11 +122,11 @@ p {
 }
 
 #logo {
-	width: 180px;
-	position: absolute;
+	width: 100px;
     right: 0;
     left: 0;
     margin: auto;
+		padding-bottom: 12px;
 }
 
 #phone {
@@ -101,9 +155,13 @@ button {
 #tagline {
 	margin: auto;
     display: block;
-    padding-top: 40vh;
     width: 80vw;
 		max-width: 860px;
+}
+
+#copy {
+	padding-top: 30vh;
+	display: grid;
 }
 
 #tagline-mob {
@@ -127,6 +185,17 @@ button {
 
     }
 
+		.background {
+			width: 100vw;
+			height: 100vh;
+			padding: 0;
+			position: ABSOLUTE;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+
     .half-two {
         background: linear-gradient(to left, #ff9b9b, #ff966c);
         position: absolute;
@@ -134,18 +203,6 @@ button {
         height: 50vh;
         right: 0;
         margin-top: 50vh;
-    }
-
-    #left {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 50vh;
-        top: 50%;
-        transform: translateY(-100px);
-        color: white;
-        width: 100vw;
     }
 
 		#subtitle {
@@ -165,7 +222,6 @@ button {
 		#tagline-mob {
 			float: left;
 	    display: block;
-	    padding-top: 30vh;
 	    width: 84vw;
 	    max-width: 860px;
 	    padding-left: 20px;
@@ -185,11 +241,11 @@ button {
     }
 
     #logo {
-        width: 180px;
-        position: absolute;
+        width: 100px;
         right: 0;
         left: 0;
         margin: auto;
+				padding-bottom: 12px;
     }
 
     #phone {
@@ -200,4 +256,11 @@ button {
         height: 53vh;
         bottom: 0;
     }
+
+		#right {
+			right: 0;
+		width: 450px;
+		bottom: 0;
+		position: absolute;
+		}
 }
