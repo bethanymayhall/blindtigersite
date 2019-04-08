@@ -1,5 +1,6 @@
 body {
 	background: #2E232C;
+	margin: 0;
 }
 
 h1 {
@@ -53,7 +54,10 @@ a:hover
 
 .main-container {
 	z-index: 2;
-	position: relative;
+position: relative;
+overflow: hidden;
+width: 100vw;
+height: 100vh;
 }
 
 #back {
@@ -160,7 +164,7 @@ button {
 }
 
 #copy {
-	padding-top: 30vh;
+	padding-top: 26vh;
 	display: grid;
 }
 
@@ -171,6 +175,7 @@ button {
 @media only screen and (max-device-width: 760px) {
     body {
     background: #2E232C;
+		margin: 0;
     }
 
     h1 {
@@ -259,8 +264,18 @@ button {
 
 		#right {
 			right: 0;
-		width: 450px;
+		width: 350px;
 		bottom: 0;
 		position: absolute;
+		}
+
+		#leaves {
+			top: -6px;
+		    width: 300px;
+		    bottom: 0;
+		    position: absolute;
+		    z-index: 1;
+				animation: sway1 10s infinite;
+		    transform-origin: 50% 100% 0;
 		}
 }
