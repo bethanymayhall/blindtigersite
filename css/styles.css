@@ -7,7 +7,7 @@ h1 {
 	color: red;
 }
 
-p, h2, h3, {
+p h2 h3 {
 	font-family: "work sans", sans-serif;
 }
 
