@@ -1,14 +1,59 @@
 body {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
 	background: #2E232C;
 	margin: 0;
+ }
+
+#particles-js {
+	    position: absolute;
+			height: 100%;
+			width: 100%;
+			opacity: 0.3;
 }
 
-h1 {
-	color: red;
+label {
+	font-family: 'work sans';
 }
 
 p h2 h3 {
 	font-family: "work sans", sans-serif;
+}
+
+#mc_embed_signup_scroll {
+	padding: 20px;
+}
+
+.required {
+	bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    padding: 10px;
+    width: 100%;
+    background: transparent;
+    transition: all .25s ease;
+}
+
+.required::after {
+	content: "";
+  right: -10px;
+  bottom: 71px;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #7149c7;
+}
+
+h2 {
+	font-family: "work sans", sans-serif;
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	font-weight: 500;
+	font-size: 22px;
 }
 
 a {
@@ -157,6 +202,15 @@ p {
     bottom: 0;
 }
 
+.mc-field-group {
+		margin: auto;
+		left: 0;
+		right: 0;
+		max-width: 730px;
+		padding-top: 20px;
+
+	}
+
 button {
 	width: 150px;
     height: 40px;
@@ -197,6 +251,14 @@ button {
         color: red;
     }
 
+		.mc-field-group {
+			margin: auto;
+		    left: 0;
+		    right: 0;
+		    width: 100%;
+				padding-top: 20px;
+		}
+
     .half-one {
         position: absolute;
         width: 50vw;
@@ -227,24 +289,20 @@ button {
 
 		#subtitle {
 			font-family: "work sans", sans-serif;
-			color: white;
-			font-size: 16px;
-			font-weight: 400;
-			text-align: left;
-			padding-top: 30px;
-			margin: auto;
-			width: 110%;
-			padding-left: 20px;
-			display: block;
-			float: left;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+    width: 100%;
 		}
 
 		#tagline-mob {
-			float: left;
-	    display: block;
-	    width: 84vw;
-	    max-width: 860px;
-	    padding-left: 20px;
+			margin: auto;
+		    display: block;
+		    width: 84vw;
+				max-width: 860px;
 		}
 
 		#tagline {
